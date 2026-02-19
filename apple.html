@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سیب کے فائدے | Health Portal</title>
+
+  <!-- Urdu Nastaliq Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #c62828;
+      --secondary: #2e7d32;
+      --bg: #f3f6f9;
+      --card: #ffffff;
+      --text: #222;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #fbe9e7, #e8f5e9);
+      font-family: 'Noto Nastaliq Urdu', serif;
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: var(--card);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 280px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg') center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.65));
+    }
+
+    .hero-content {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 2;
+      color: #fff;
+    }
+
+    .hero-content h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+
+    .hero-content p {
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    /* INFO BAR */
+    .info-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 15px;
+      background: #fafafa;
+      border-bottom: 1px solid #eee;
+    }
+
+    .info-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      font-size: 16px;
+    }
+
+    .info-box span {
+      display: block;
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    /* CONTENT */
+    .content {
+      padding: 25px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 20px;
+      border-right: 6px solid var(--secondary);
+      padding-right: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 20px;
+      color: var(--primary);
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #111;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .hero { height: 220px; }
+      .hero-content h1 { font-size: 26px; }
+      .hero-content p { font-size: 16px; }
+      .info-bar { grid-template-columns: 1fr; }
+      .section-title { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>سیب کے فائدے</h1>
+      <p>قدرتی طاقت، صحت مند دل اور بہتر ہاضمہ</p>
+    </div>
+  </div>
+
+  <!-- INFO BAR -->
+  <div class="info-bar">
+    <div class="info-box"><span>🍎</span>قدرتی غذا</div>
+    <div class="info-box"><span>💪</span>طاقت اور توانائی</div>
+    <div class="info-box"><span>❤️</span>دل کے لیے مفید</div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <div class="section-title">اہم طبی فوائد</div>
+
+    <div class="grid">
+      <div class="card"><h3>دل کی صحت</h3><p>سیب کولیسٹرول کم کرتا ہے اور دل کی بیماریوں سے بچاتا ہے۔</p></div>
+      <div class="card"><h3>ہاضمہ</h3><p>فائبر سے بھرپور ہونے کی وجہ سے قبض دور کرتا ہے۔</p></div>
+      <div class="card"><h3>وزن میں کمی</h3><p>کم کیلوریز اور زیادہ فائبر وزن گھٹانے میں مدد دیتے ہیں۔</p></div>
+      <div class="card"><h3>دماغی صحت</h3><p>یادداشت بہتر بناتا ہے اور ذہنی دباؤ کم کرتا ہے۔</p></div>
+      <div class="card"><h3>مدافعتی نظام</h3><p>اینٹی آکسیڈنٹس جسم کو بیماریوں سے محفوظ رکھتے ہیں۔</p></div>
+      <div class="card"><h3>جلد اور بال</h3><p>جلد کو چمکدار اور بالوں کو مضبوط بناتا ہے۔</p></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © 2026 |Awam ki Awaz -RIGHTS RESERVED
+  </div>
+
+</div>
+
+</body>
+</html>
