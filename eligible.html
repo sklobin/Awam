@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWAM KI AWAZ</title>
+
     <!-- Google Noto Nastaliq Urdu Font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
@@ -15,7 +17,6 @@
             line-height: 1.6;
         }
 
-        /* Header */
         header {
             background: linear-gradient(90deg, #004080, #0066cc);
             color: #fff;
@@ -26,13 +27,13 @@
             top: 0;
             z-index: 1000;
         }
+
         header h1 {
             margin: 0;
             font-size: 32px;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
 
-        /* Main Content */
         main {
             padding: 25px;
             max-width: 900px;
@@ -45,31 +46,46 @@
             margin-bottom: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .news-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
+
         .news-card h2 {
             color: #004080;
             font-size: 22px;
             margin-top: 0;
         }
+
         .news-card p {
             margin: 10px 0;
             font-size: 16px;
         }
-        .news-card a {
-            color: #ff6600;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .news-card a:hover {
-            text-decoration: underline;
+
+        /* LINK BOX */
+        .link-box {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f0f7ff;
+            border: 2px dashed #0066cc;
+            border-radius: 12px;
+            text-align: center;
         }
 
-        /* Footer */
+        .link-box a {
+            display: inline-block;
+            background: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .link-box a:hover {
+            background: #e65c00;
+            transform: scale(1.05);
+        }
+
         footer {
             background: linear-gradient(90deg, #004080, #0066cc);
             color: #fff;
@@ -79,41 +95,33 @@
             font-size: 14px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
-            box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
-        }
-        footer a {
-            color: #ffcc00;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>AWAM KI AWAZ</h1>
-    </header>
+<header>
+    <h1>AWAM KI AWAZ</h1>
+</header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="news-card">
-            <h2>رمضان پیکج 2026</h2>
-            <p>آپ رمضان پیکیج کیلئے اہل ہیں یا نہیں؟</p>
-            <p>شناختی کارڈ ڈائل کریں اور جانیں</p>
-            <p><a href="https://pmrrp.nitb.gov.pk">یہاں کلک کریں اور جانے کی اپ اہل ہیں کہ نہیں ہے لیکن</a></p>
+<main>
+    <div class="news-card">
+        <h2>رمضان پیکج 2026</h2>
+        <p>آپ رمضان پیکیج کیلئے اہل ہیں یا نہیں؟</p>
+        <p>شناختی کارڈ نمبر درج کریں اور فوراً جانیں</p>
+
+        <div class="link-box">
+            <p><strong>اہلیت جاننے کے لیے</strong></p>
+            <a href="https://pmrrp.nitb.gov.pk" target="_blank">
+                یہاں کلک کریں
+            </a>
         </div>
+    </div>
+</main>
 
-        <!-- مزید نیوز کارڈز یہاں شامل کریں -->
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        © 2026 عوام کی آواز | All rights reserved
-    </footer>
+<footer>
+    © 2026 عوام کی آواز | All rights reserved
+</footer>
 
 </body>
 </html>
